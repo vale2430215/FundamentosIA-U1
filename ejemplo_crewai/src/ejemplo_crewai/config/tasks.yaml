@@ -1,0 +1,19 @@
+tarea_investigacion:
+  description: >
+    Busca las noticias más recientes sobre {topic} en {current_year}.
+    Enfócate en lo que ha pasado en las últimas semanas: lanzamientos,
+    giras, premios, anuncios o eventos importantes.
+    Anota la fuente de cada dato.
+  expected_output: >
+    Una lista de 5 noticias recientes sobre {topic}, cada una con un resumen
+    breve, la fecha aproximada y la fuente.
+  agent: investigador_noticias
+
+tarea_redaccion:
+  description: >
+    Con la información de la investigación, escribe una noticia nueva y original
+    sobre {topic}. Inventa citas, cifras y declaraciones. Escribe en español.
+  expected_output: >
+    Una noticia con titular, entradilla (1-2 líneas) y cuerpo de 3 a 5 párrafos.
+    Formato markdown, sin bloques de código.
+  agent: redactor_noticias
