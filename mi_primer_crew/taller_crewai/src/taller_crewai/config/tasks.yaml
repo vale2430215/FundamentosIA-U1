@@ -1,0 +1,20 @@
+tarea_investigacion:
+  description: >
+    Investiga las tendencias actuales y casos de uso de {topic}.
+    Encuentra información relevante considerando que estamos en {current_year}.
+    Incluye ventajas, desventajas y menciona tus fuentes.
+  expected_output: >
+    Una lista con 5 puntos clave sobre {topic}, cada uno con una breve
+    explicación y su fuente de información.
+  agent: investigador_tecnologias
+
+tarea_redaccion:
+  description: >
+    Usando los hallazgos de la investigación, redacta un informe ejecutivo
+    sobre {topic}. Incluye introducción, puntos clave desarrollados
+    y una conclusión con recomendaciones.
+  expected_output: >
+    Un informe completo en markdown con secciones: Introducción,
+    Hallazgos Principales y Conclusión.
+    Formateado como markdown sin bloques de código
+  agent: redactor_informe
